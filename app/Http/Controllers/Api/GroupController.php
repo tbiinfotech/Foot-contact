@@ -335,7 +335,7 @@ class GroupController extends Controller
                 'data' => $data,
                 'message' => 'Event List'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'

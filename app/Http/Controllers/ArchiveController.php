@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Tymon\JWTAuth\Validators\Validator;
 use Illuminate\Support\Facades\Validator as FacadesValidator;
+use Tymon\JWTAuth\Exceptions\JWTException;
 
 class ArchiveController extends Controller
 {

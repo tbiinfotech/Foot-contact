@@ -56,7 +56,7 @@ class EventController extends Controller
                 $file->move($path, $filename);
             }
             //Event Create
-            $event = Event::create([
+            $event = Event::create([ 
                 'event_type_id' => $event_type_id,
                 'match_type_id' => $match_type_id,
                 'image' => isset($filename) ? $filename : '',
@@ -128,7 +128,7 @@ class EventController extends Controller
                 // 'players_list' => $players_list,
                 'message' => 'Event Created'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             DB::rollback();
             return response()->json([
                 'success' => false,
@@ -242,7 +242,7 @@ class EventController extends Controller
                 'players_list' => $players_list,
                 'message' => 'Event Created'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             DB::rollback();
             return response()->json([
                 'success' => false,
@@ -281,7 +281,7 @@ class EventController extends Controller
                 'success' => true,
                 'message' => 'Invite Accept'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid Token'
@@ -315,7 +315,7 @@ class EventController extends Controller
                 'success' => true,
                 'message' => 'Event Cancel'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid Token'
@@ -344,7 +344,7 @@ class EventController extends Controller
                 'success' => true,
                 'data' => $list,
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid Token'
@@ -362,7 +362,7 @@ class EventController extends Controller
                 'success' => true,
                 'data' => $event,
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid Token'
@@ -514,7 +514,7 @@ class EventController extends Controller
                 'data' => $data,
                 'message' => 'Event List'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -583,7 +583,7 @@ class EventController extends Controller
                 'data' => $data,
                 'message' => 'Event List'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -627,7 +627,7 @@ class EventController extends Controller
                 'data' => $data,
                 'message' => 'Event List'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -649,7 +649,7 @@ class EventController extends Controller
                 'data' => $data,
                 'message' => 'Event List'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -673,7 +673,7 @@ class EventController extends Controller
                 'success' => true,
                 'message' => 'status update'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -700,7 +700,7 @@ class EventController extends Controller
                 'success' => true,
                 'data' =>  $notification,
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'

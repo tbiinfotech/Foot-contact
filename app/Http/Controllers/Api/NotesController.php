@@ -31,7 +31,7 @@ class NotesController extends Controller
                 'data' => $data, 
                 'message' => 'Note Created'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Data not saved'
@@ -54,7 +54,7 @@ class NotesController extends Controller
                 'data' => $data,
                 'message' => 'Note Edit'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Data not saved'
@@ -72,7 +72,7 @@ class NotesController extends Controller
                 'success' => true,
                 'message' => 'Note Delete'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Data not saved'
@@ -92,7 +92,7 @@ class NotesController extends Controller
                 'data' => $data,
                 'message' => 'Note Created'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Data not saved'

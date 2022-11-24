@@ -218,7 +218,7 @@ class UserController extends Controller
                 'success' => false,
                 'message' => 'Invalid OTP'
             ], 400);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid OTP'
@@ -260,7 +260,7 @@ class UserController extends Controller
                     'message' => 'invalid code'
                 ], 400);
             }
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid OTP'
@@ -284,7 +284,7 @@ class UserController extends Controller
                 'success' => true,
                 'message' => 'OTP sent'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid OTP'
@@ -315,7 +315,7 @@ class UserController extends Controller
                 'message' => 'Email Verified',
                 'link' => $link
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -336,7 +336,7 @@ class UserController extends Controller
                 'success' => true,
                 'message' => 'Email verified'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -372,7 +372,7 @@ class UserController extends Controller
                 'data' => $list,
                 'message' => 'player list'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -408,7 +408,7 @@ class UserController extends Controller
                 'data' => $list,
                 'message' => 'Invite Accept'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid Token'
@@ -463,7 +463,7 @@ class UserController extends Controller
                 'success' => true,
                 'message' => 'Profile Update'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid Token'
@@ -512,7 +512,7 @@ class UserController extends Controller
                 'success' => true,
                 'message' => 'User has been logged out'
             ]);
-        } catch (JWTException $exception) {
+        } catch (\Exception $exception) {
             return response()->json([
                 'success' => false,
                 'message' => 'Sorry, user cannot be logged out'
@@ -675,7 +675,7 @@ class UserController extends Controller
                     'message' => 'Invalid OTP'
                 ], 400);
             }
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid OTP'
@@ -696,7 +696,7 @@ class UserController extends Controller
                 'success' => true,
                 'data' => $data
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -740,7 +740,7 @@ class UserController extends Controller
                 'success' => false,
                 'message' => 'User not found'
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             DB::rollback();
             Log::error($e->getMessage());
             return response()->json([
@@ -762,7 +762,7 @@ class UserController extends Controller
                 'success' => true,
                 'data' => $data
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -783,7 +783,7 @@ class UserController extends Controller
                 'success' => true,
                 'data' => $data
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -813,7 +813,7 @@ class UserController extends Controller
                 'success' => true,
                 'data' => $d
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -842,7 +842,7 @@ class UserController extends Controller
                 'data' => $d
             ], 200);
       
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
