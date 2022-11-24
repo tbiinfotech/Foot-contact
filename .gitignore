@@ -10,8 +10,7 @@
 
 .env
 
-.env.backup
-
+.env.example
 .phpunit.result.cache
 
 docker-compose.override.yml
@@ -27,3 +26,9 @@ yarn-error.log
 /.idea
 
 /.vscode
+
+webpack.mix.js
+phpunit.xml
+composer.lock
+package-lock.json
+.styleci.yml
