@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Player Management</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+   </head>
+   <body style="background-color:#f2f2f7;">
+      <div class="container-fluid">
+         <div class="row flex-nowrap dash_head align-items-center head_top">
+            <div class="col-auto col-md-3 col-xl-2 logo-site">
+               <a href="#"> <img src="assets/images/logo.png" alt="site_logo"> </a>
+            </div>
+            <div class="col top_right_head text-end dropdown">
+  <a type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+   <span>Welcome, Asap Football</span> <img src="assets/images/ring.svg" alt="bell">
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><img src="assets/images/show1.svg" alt="showone">
+	<div><h3>Lorem Ipsum is simply du...</h3>
+	<p>Lorem Ipsum is simply dummy text of the printi... 
+	<span> 31 May 2022, 08:40 PM </span></p></div>
+	</li>
+    <li><img src="assets/images/show2.svg" alt="showone">
+	<div><h3>Lorem Ipsum is simply du...</h3>
+	<p>Lorem Ipsum is simply dummy text of the printi... 
+	<span> 31 May 2022, 08:40 PM </span></p></div>
+	</li>
+    <li><img src="assets/images/show1.svg" alt="showone">
+	<div><h3>Lorem Ipsum is simply du...</h3>
+	<p>Lorem Ipsum is simply dummy text of the printi... 
+	<span> 31 May 2022, 08:40 PM </span></p></div>
+	</li>
+	<li><img src="assets/images/show3.svg" alt="showone">
+	<div><h3>Lorem Ipsum is simply du...</h3>
+	<p>Lorem Ipsum is simply dummy text of the printi... 
+	<span> 31 May 2022, 08:40 PM </span></p></div>
+	</li>
+	  <li><a href="#">View All Listing</a></li>
+  </ul>
+            </div>
+         </div>
+         <div class="row flex-nowrap dash_board">
+            <div class="col-auto col-md-3 col-xl-2  px-0 left_bar">
+               <div class="left_fix d-flex flex-column align-items-center align-items-sm-start  pt-2 text-white min-vh-100">
+                  <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                     <li>
+                        <a href="#" class="nav-link align-middle">
+                        <img src="assets/images/dashboard-line.svg" alt="clarity">
+                        <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#" class="nav-link align-middle">
+                        <img src="assets/images/coach-m.svg" alt="coach">
+                        <span class="ms-1 d-none d-sm-inline">Coach Management</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link align-middle">
+                        <img src="assets/images/group-cat.svg" alt="group">
+                        <span class="ms-1 d-none d-sm-inline">Group Categories</span></a>
+                     </li>
+                     <li>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link align-middle ">
+                        <img src="assets/images/play-m.svg" alt="play">
+                        <span class="ms-1 d-none d-sm-inline">Player Management</span></a>
+                        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                           <li class="w-100">
+                              <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Item</span> 1</a>
+                           </li>
+                           <li>
+                              <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link align-middle">
+                        <img src="assets/images/Calendar.svg" alt="calender">
+                        <span class="ms-1 d-none d-sm-inline">Events Management</span> </a>
+                        <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                           <li class="w-100">
+                              <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                           </li>
+                           <li>
+                              <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link align-middle">
+                        <img src="assets/images/bx_help-circle.svg" alt="help">
+                        <span class="ms-1 d-none d-sm-inline">Help/Contact Us</span> </a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link align-middle">
+                        <img src="assets/images/ant-design_logout-outlined.svg" alt="ant">
+                        <span class="ms-1 d-none d-sm-inline">Logout</span> </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col sec_cont">
+			<form>
+               <div class="row">
+                  <div class="head_top plr">
+                     <h1> Player Management </h1>
+                     <div class="row add_coach">
+                              <div class="col-lg-5">
+                                 <label class="searc-btn">
+                                 <input type="serach" placeholder="Search Player name, group">
+                                 <img src="assets/images/akar-icons_search.svg" alt="search">
+                                 </label>	
+                              </div>
+                              <div class="col-lg-7">
+                                 <div class="search_by">
+                                    <label> Search By Group</label>
+                                    <label class="sd">
+                                       <select>
+                                          <option> All  </option>
+                                          <option> Assign Role </option>
+                                          <option> Assign Role </option>
+                                       </select>
+                                       <img src="assets/images/Polygon.svg" alt="Polygon"> 
+                                    </label>
+                                 </div>
+                              </div>
+                        
+                        </div>
+                  </div>
+                  <div class="coach-m table-responsive">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th scope="col">Sr.</th>
+                              <th scope="col">Image</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Group</th>
+                              <th scope="col">Roles</th>
+                              <th scope="col">Actions</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td scope="row">1</td>
+                              <td><img src="assets/images/image-log.png" alt="Ellipse1.png"></td>
+                              <td>Methis Beaureguard</td>
+                              <td>U16 <img src="assets/images/Number-rank.svg" alt="svg"></td>
+                              <td>Coach</td>
+                              <td>
+                                 <a href="#"><img src="assets/images/edit.svg" alt="see"></a>
+                                 <a href="#"><img src="assets/images/ditt.svg" alt="edit"></a>
+                                 <a href="#"><img src="assets/images/delete.svg" alt="delete"></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td scope="row">2</td>
+                              <td><img src="assets/images/bo-log.png" alt="Ellipse1.png"></td>
+                              <td>Methis Beaureguard</td>
+                              <td>U16 <img src="assets/images/Number-rank.svg" alt="svg"></td>
+                              <td>Coach</td>
+                              <td>
+                                 <a href="#"><img src="assets/images/edit.svg" alt="see"></a>
+                                 <a href="#"><img src="assets/images/ditt.svg" alt="edit"></a>
+                                 <a href="#"><img src="assets/images/delete.svg" alt="delete"></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td scope="row">3</td>
+                              <td><img src="assets/images/image-log.png" alt="Ellipse1.png"></td>
+                              <td>Methis Beaureguard</td>
+                              <td>U16 <img src="assets/images/Number-rank.svg" alt="svg"></td>
+                              <td>Coach</td>
+                              <td>
+                                 <a href="#"><img src="assets/images/edit.svg" alt="see"></a>
+                                 <a href="#"><img src="assets/images/ditt.svg" alt="edit"></a>
+                                 <a href="#"><img src="assets/images/delete.svg" alt="delete"></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td scope="row">4</td>
+                              <td><img src="assets/images/bo-log.png" alt="Ellipse1.png"></td>
+                              <td>Methis Beaureguard</td>
+                              <td>U16 <img src="assets/images/Number-rank.svg" alt="svg"></td>
+                              <td>Coach</td>
+                              <td>
+                                 <a href="#"><img src="assets/images/edit.svg" alt="see"></a>
+                                 <a href="#"><img src="assets/images/ditt.svg" alt="edit"></a>
+                                 <a href="#"><img src="assets/images/delete.svg" alt="delete"></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td scope="row">5</td>
+                              <td><img src="assets/images/image-log.png" alt="Ellipse1.png"></td>
+                              <td>Methis Beaureguard</td>
+                              <td>U16 <img src="assets/images/Number-rank.svg" alt="svg"></td>
+                              <td>Coach</td>
+                              <td>
+                                 <a href="#"><img src="assets/images/edit.svg" alt="see"></a>
+                                 <a href="#"><img src="assets/images/ditt.svg" alt="edit"></a>
+                                 <a href="#"><img src="assets/images/delete.svg" alt="delete"></a>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <div class="table_bottom">
+                        <label>
+                           <select>
+                              <option> 1</option>
+                              <option>3 </option>
+                              <option> 5</option>
+                           </select>
+                           Per Page
+                        </label>
+                        <nav aria-label="Page navigation example">
+                           <ul class="pagination">
+                              <li class="page-item">
+                                 <a class="page-link" href="#" aria-label="Previous">
+                                 <span aria-hidden="true"> <img src="assets/images/arrow.svg" alt="leftarrow"> </span>
+                                 </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                 <a class="page-link" href="#" aria-label="Next">
+                                 <span aria-hidden="true"> <img src="assets/images/arrow.svg" alt="rightarrow"> </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+
+                  </div>
+               </div>
+			   </form>
+            </div>
+         </div>
+      </div>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+   </body>
+</html>

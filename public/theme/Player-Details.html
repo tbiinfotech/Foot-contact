@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Player Details</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+   </head>
+   <body style="background-color:#f2f2f7;">
+      <div class="container-fluid">
+      <div class="row flex-nowrap dash_head align-items-center">
+         <div class="col-auto col-md-3 col-xl-2 logo-site">
+            <a href="#"> <img src="assets/images/logo.png" alt="site_logo"> </a>
+         </div>
+         <div class="col top_right_head text-end">
+            <a href="#"><span>Welcome, Asap Football</span> <img src="assets/images/ring.svg" alt="bell"></a>
+         </div>
+      </div>
+      <div class="row flex-nowrap dash_board">
+         <div class="col-auto col-md-3 col-xl-2  px-0 left_bar">
+            <div class="left_fix d-flex flex-column align-items-center align-items-sm-start  pt-2 text-white min-vh-100">
+               <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                  <li>
+                     <a href="#" class="nav-link align-middle">
+                     <img src="assets/images/dashboard-line.svg" alt="clarity">
+                     <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link align-middle">
+                     <img src="assets/images/coach-m.svg" alt="coach">
+                     <span class="ms-1 d-none d-sm-inline">Coach Management</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="nav-link align-middle">
+                     <img src="assets/images/group-cat.svg" alt="group">
+                     <span class="ms-1 d-none d-sm-inline">Group Categories</span></a>
+                  </li>
+                  <li>
+                     <a href="#submenu2" data-bs-toggle="collapse" class="nav-link align-middle ">
+                     <img src="assets/images/play-m.svg" alt="play">
+                     <span class="ms-1 d-none d-sm-inline">Player Management</span></a>
+                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                        <li class="w-100">
+                           <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Item</span> 1</a>
+                        </li>
+                        <li>
+                           <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#submenu3" data-bs-toggle="collapse" class="nav-link align-middle">
+                     <img src="assets/images/Calendar.svg" alt="calender">
+                     <span class="ms-1 d-none d-sm-inline">Events Management</span> </a>
+                     <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                        <li class="w-100">
+                           <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                        </li>
+                        <li>
+                           <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#" class="nav-link align-middle">
+                     <img src="assets/images/bx_help-circle.svg" alt="help">
+                     <span class="ms-1 d-none d-sm-inline">Help/Contact Us</span> </a>
+                  </li>
+                  <li>
+                     <a href="#" class="nav-link align-middle">
+                     <img src="assets/images/ant-design_logout-outlined.svg" alt="ant">
+                     <span class="ms-1 d-none d-sm-inline">Logout</span> </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="col sec_cont">
+            <div class="row">
+               <div class="head_top">
+                  <h1> Player Details </h1>
+                  <a class="btn back_btn" href="#" role="button"> Back </a>
+               </div>
+               <div class="sp_rd coach-pr">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="user_img">
+                           <img src="assets/images/user.png" alt="user">
+                           <label>Maethis Beaureguard <span>Player</span>
+						   <span><img src="assets/images/Icon.svg" alt=""> 10 June, 2022</span></label>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="row">
+                           <div class="col-md-6 box_cr box-info">
+                              <label> 
+							   <img src="assets/images/Call.svg" alt="call">
+							   <span>+12 123 456 789</span>
+							  </label>
+							  
+                              <label>
+							    <img src="assets/images/Message.svg" alt="message"> 
+							    <span>Jehnychapman@gmail.com</span>
+							  </label>
+                           </div>
+                           <div class="col-md-6 box_cr">
+                              <img src="assets/images/Group5.svg" alt="icontwo">
+                              <h2>3<span>Numbers of Groups</span></h2>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <nav>
+                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Groups</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Family</button>
+                     </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					   <div class="row">
+					     <div class="col-md-3">
+					      <div class="brand_logo">
+                           <img src="assets/images/image-log.png" alt="logogreen">
+					       <h3> Premium Sport Club </h3>
+						   <p> Sam Football Academy </p>
+                          </div>
+                         </div>
+						 
+						 <div class="col-md-3">
+						 <div class="brand_logo">
+                         <img src="assets/images/bo-log.png" alt="logobo">
+					      <h3> Orignal Sport Club </h3>
+						  <p>Sam Football Academy </p>
+                         </div>
+                         </div>
+                       </div>
+                     </div>
+
+                     </div>
+                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">b</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  
+	  
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+   </body>
+</html>

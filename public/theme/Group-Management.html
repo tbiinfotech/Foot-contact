@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Group Management</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+   </head>
+   <body style="background-color:#f2f2f7;">
+      <div class="container-fluid">
+         <div class="row flex-nowrap dash_head align-items-center">
+            <div class="col-auto col-md-3 col-xl-2 logo-site">
+               <a href="#"> <img src="assets/images/logo.png" alt="site_logo"> </a>
+            </div>
+            <div class="col top_right_head text-end">
+               <a href="#"><span>Welcome, Asap Football</span> <img src="assets/images/ring.svg" alt="bell"></a>
+            </div>
+         </div>
+         <div class="row flex-nowrap dash_board">
+            <div class="col-auto col-md-3 col-xl-2  px-0 left_bar">
+               <div class="left_fix d-flex flex-column align-items-center align-items-sm-start  pt-2 text-white min-vh-100">
+                  <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                     <li>
+                        <a href="#" class="nav-link align-middle">
+                        <img src="assets/images/dashboard-line.svg" alt="clarity">
+                        <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#" class="nav-link align-middle">
+                        <img src="assets/images/coach-m.svg" alt="coach">
+                        <span class="ms-1 d-none d-sm-inline">Coach Management</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link align-middle">
+                        <img src="assets/images/group-cat.svg" alt="group">
+                        <span class="ms-1 d-none d-sm-inline">Group Categories</span></a>
+                     </li>
+                     <li>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link align-middle ">
+                        <img src="assets/images/play-m.svg" alt="play">
+                        <span class="ms-1 d-none d-sm-inline">Player Management</span></a>
+                        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                           <li class="w-100">
+                              <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Item</span> 1</a>
+                           </li>
+                           <li>
+                              <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link align-middle">
+                        <img src="assets/images/Calendar.svg" alt="calender">
+                        <span class="ms-1 d-none d-sm-inline">Events Management</span> </a>
+                        <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                           <li class="w-100">
+                              <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                           </li>
+                           <li>
+                              <a href="#" class="nav-link"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link align-middle">
+                        <img src="assets/images/bx_help-circle.svg" alt="help">
+                        <span class="ms-1 d-none d-sm-inline">Help/Contact Us</span> </a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link align-middle">
+                        <img src="assets/images/ant-design_logout-outlined.svg" alt="ant">
+                        <span class="ms-1 d-none d-sm-inline">Logout</span> </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col sec_cont">
+			<form>
+               <div class="row">
+                  <div class="head_top plr">
+                     <h1> Group Management </h1>
+                     <div class="row add_coach">
+                              <div class="col-lg-8">
+                                 <label class="searc-btn">
+                                 <input type="serach" placeholder="Search">
+                                 <img src="assets/images/akar-icons_search.svg" alt="search">
+                                 </label>	
+                              </div>
+                              <div class="col-lg-4">
+                                 <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        + Add Coach
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                           <li><a class="dropdown-item" href="#">Add New Coach
+                              </a>
+                           </li>
+                           <li><a class="dropdown-item" href="#">Existing Coach</a></li>
+                        </ul>
+                     </div>
+                              </div>
+                        
+                        </div>
+                  </div>
+                  <div class="coach-m table-responsive">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th scope="col">Sr.</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Players</th>
+                              <th scope="col">Team</th>
+                              <th scope="col">Coach</th>
+                              <th scope="col">Actions</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td scope="row">1</td>
+                              <td>U16 <img src="assets/images/Number-rank.svg" alt="svg"></td>
+                              <td>250 </td>
+                              <td>1</td>
+                              <td>5</td>
+                              <td>
+                                 <a href="#">
+                                 <img src="assets/images/edit.svg" alt="edit">
+                                 </a>
+                                 <a href="#"> <img src="assets/images/3-dots.svg" alt="dots"></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td scope="row">2</td>
+                              <td>U16 <img src="assets/images/Number-rank.svg" alt="svg">, Vaureal 3</td>
+                              <td>150</td>
+                              <td>2</td>
+                              <td>4</td>
+                              <td>
+                                 <a href="#"><img src="assets/images/edit.svg" alt="edit"></a>
+                                 <a href="#"> <img src="assets/images/3-dots.svg" alt="dots"></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td scope="row">3</td>
+                              <td>U16 <img src="assets/images/Number-rank.svg" alt="svg">, Vaureal 3</td>
+                              <td>165</td>
+                              <td>3</td>
+                              <td>6</td>
+                              <td>
+                                 <a href="#"><img src="assets/images/edit.svg" alt="edit"></a>
+                                 <a href="#"> <img src="assets/images/3-dots.svg" alt="dots"></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td scope="row">4</td>
+                              <td>U16 <img src="assets/images/Number-rank.svg" alt="svg"></td>
+                              <td>246</td>
+                              <td>4</td>
+                              <td>4</td>
+                              <td>
+                                 <a href="#"><img src="assets/images/edit.svg" alt="edit"></a>
+                                 <a href="#"> <img src="assets/images/3-dots.svg" alt="dots"></a>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td scope="row">5</td>
+                              <td>U16 <img src="assets/images/Number-rank.svg" alt="svg">, Vaureal 3</td>
+                              <td>201</td>
+                              <td>5</td>
+                              <td>8</td>
+                              <td>
+                                 <a href="#"><img src="assets/images/edit.svg" alt="edit"></a>
+                                 <a href="#"> <img src="assets/images/3-dots.svg" alt="dots"></a>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <div class="table_bottom">
+                        <label>
+                           <select>
+                              <option> 1</option>
+                              <option>3 </option>
+                              <option> 5</option>
+                           </select>
+                           Per Page
+                        </label>
+                        <nav aria-label="Page navigation example">
+                           <ul class="pagination">
+                              <li class="page-item">
+                                 <a class="page-link" href="#" aria-label="Previous">
+                                 <span aria-hidden="true"> <img src="assets/images/arrow.svg" alt="leftarrow"> </span>
+                                 </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                 <a class="page-link" href="#" aria-label="Next">
+                                 <span aria-hidden="true"> <img src="assets/images/arrow.svg" alt="rightarrow"> </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+			   </form>
+            </div>
+         </div>
+      </div>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+   </body>
+</html>
