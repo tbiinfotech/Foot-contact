@@ -82,24 +82,16 @@ class ContactReasonController extends Controller
      */
     public function send_mail(Request $request)
     {
-        // try {
-            // $mailData = [
-            //     'title' => 'Mail from Mansjoer.com',
-            //     'body' => 'This is for testing email using smtp.'
-            // ];
-            
-            // $reason = $request->reason;
-            // $description = $request->description;
-            // $email = Auth::user()->email;
+        try {
             $details = [
                 'title' => 'Mail from Online Web Tutor',
                 'body' => 'Test mail sent by Laravel 8 using SMTP.'
             ];
             Mail::to('shavi.rishi@brihaspatitech.com')->send(new \App\Mail\DemoMail($details));
             return redirect('contact-reason-index');
-        // } catch (\Exception $e) {
-        //     return $this->error($e->getMessage());
-        // }
+        } catch (\Exception $e) {
+            return $this->error($e->getMessage());
+        }
         return view('contactReason.add'); 
     }
 }

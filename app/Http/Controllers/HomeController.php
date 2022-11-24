@@ -21,7 +21,6 @@ use Ladumor\OneSignal\OneSignal;
 use Google\Cloud\Firestore\FirestoreClient;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
-use Tymon\JWTAuth\Exceptions\JWTException;
 
 
 class HomeController extends Controller
@@ -298,7 +297,7 @@ class HomeController extends Controller
             return response()->json([
                 'success' => true,
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
@@ -363,7 +362,7 @@ class HomeController extends Controller
             return response()->json([
                 'success' => true,
             ], 200);
-        } catch (JWTException $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email'
