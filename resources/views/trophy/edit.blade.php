@@ -18,9 +18,9 @@
                            <h4>Coach Image</h4>
                            <div class="user_img">
                            @if($data->image)
-                                <img src="{{ asset('/Uploads/'.$data->image) }}" width="50" height="50" />
+                                <img src="{{ asset('/Uploads/'.$data->image) }}" alt="image" width="50" height="50" />
                                 @else
-                                <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                                <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                                 @endif                              <span>
                                  <input type="file"  id="image" name="image">
                                  @if(Auth::user()->role_id == "1")

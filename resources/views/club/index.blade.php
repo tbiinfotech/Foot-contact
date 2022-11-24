@@ -35,9 +35,9 @@
 
                   <td>
                      @if($item->image)
-                     <img src="{{ asset('Uploads/'.$item->image) }}" width="50" height="50" />
+                     <img src="{{ asset('Uploads/'.$item->image) }}" alt="image" width="50" height="50" />
                      @else
-                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                      @endif
                   </td>
                   @if(!empty($item->first_name))
@@ -87,7 +87,7 @@
                               <div class="col-md-12">
                                  <h4>Club Image</h4>
                                  <div class="user_img">
-                                    <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="100" height="100" />
+                                    <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="100" height="100" />
                                     <span>
                                        <input type="file" id="image" name="image">
                                        @if(Auth::user()->role_id == "1")
@@ -162,7 +162,7 @@
                $("#phone").val(data.response.data.phone);
                $("#email").val(data.response.data.email);
                $('#staticBackdrop').modal('show');
-               $('.user_img').html('<img src="http://15.188.226.196/public/Uploads/'+data.response.data.image+'"  width="100" height="100"/>');
+               $('.user_img').html('<img src="http://15.188.226.196/public/Uploads/'+data.response.data.image+'"  alt="image" width="100" height="100"/>');
 
             }
          }

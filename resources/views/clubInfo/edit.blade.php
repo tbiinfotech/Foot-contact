@@ -16,9 +16,9 @@
                   <h4>Club Image</h4>
                   <div class="user_imgs" style="margin-right: 22px;max-width: 110px;border-radius: 10px;">
                      @if($club_detail->logo)
-                     <img src="{{ asset('Uploads/'.$club_detail->logo) }}" width="50" height="50" />
+                     <img src="{{ asset('Uploads/'.$club_detail->logo) }}" alt="image" width="50" height="50" />
                      @else
-                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                      @endif
                   </div>
                   <div class="user_img">

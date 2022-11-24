@@ -61,9 +61,9 @@ use Illuminate\Support\Facades\Auth;
                 <li>
                   <div>
                     @if($notification->logo)
-                    <img src="{{ $notification->logo }}" width="50" height="50" />
+                    <img src="{{ $notification->logo }}" alt="image" width="50" height="50" />
                     @else
-                    <img src="http://15.188.226.196/public/Uploads/profile-picture.jpg" width="50" height="50" />
+                    <img src="http://15.188.226.196/public/Uploads/profile-picture.jpg" alt="image" width="50" height="50" />
                     @endif
                     <h5>{{$notification->title}}</h5><br>
                     {{$notification->description}}<br>

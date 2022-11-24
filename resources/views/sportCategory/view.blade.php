@@ -21,9 +21,9 @@
 
         <div class="user_img">
           @if($data->image)
-          <img src="{{ asset('Uploads/'.$data->image) }}" width="100" height="100" />
+          <img src="{{ asset('Uploads/'.$data->image) }}" alt="image" width="100" height="100" />
           @else
-          <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="100" height="100" />
+          <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="100" height="100" />
           @endif
         </div></div>
         <div class="col-lg-8">

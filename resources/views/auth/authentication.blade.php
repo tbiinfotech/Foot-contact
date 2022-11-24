@@ -26,7 +26,6 @@
             </div>
             @endif
             <div class="text-center">
-               <!-- <img src="assets/images/logo-login.png" alt="logo">   -->
                <img src="{{ asset('theme/assets/images/logo-login.png') }}" alt="logo">
                <h2>Verification</h2>
             </div>

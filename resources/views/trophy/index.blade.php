@@ -40,9 +40,9 @@
                             <td>{{ $item->name }}</td>
                             <td>
                                 @if($item->image)
-                                <img src="{{ asset('/Uploads/'.$item->image) }}" width="50" height="50" />
+                                <img src="{{ asset('/Uploads/'.$item->image) }}" alt="image" width="50" height="50" />
                                 @else
-                                <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                                <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                                 @endif
                             </td>
                             <td>

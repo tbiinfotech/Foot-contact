@@ -28,7 +28,7 @@
                         <div class="col-md-6">
                            <h4>Coach Image</h4>
                            <div class="user_img">
-                           <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                           <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                               <span>
                               <input type="file" name="user" disabled>
                               @if(Auth::user()->role_id == "1")

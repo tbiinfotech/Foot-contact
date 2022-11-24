@@ -25,16 +25,16 @@
                         @endif
                         @endforeach
                      </select>
-                     <img src="{{ asset('theme/assets/images/Polygon.svg') }}" alt="Polygon">
+                     <img src="{{ asset('theme/assets/images/Polygon.svg') }}" alt="image" alt="Polygon">
                   </label>
                </div>
                <div class="col-md-6">
                   <label> Image </label>
                   <div class="user_imgs" style="margin-right: 22px;max-width: 110px;border-radius: 10px;">
                      @if($data->image)
-                     <img src="{{ asset('Uploads/'.$data->image) }}" width="100" height="100" />
+                     <img src="{{ asset('Uploads/'.$data->image) }}" alt="image" width="100" height="100" />
                      @else
-                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                      @endif
                   </div>
                   <div class="user_img">

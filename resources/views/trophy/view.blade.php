@@ -12,9 +12,9 @@
          <div class="col-lg-6">
                <div class="user_img">
                @if($data->image)
-                            <img src="{{ asset('/Uploads/'.$data->image) }}" width="50" height="50" />
+                            <img src="{{ asset('/Uploads/'.$data->image) }}"  alt="image" width="50" height="50" />
                   @else
-                  <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                  <img src="{{ asset('Uploads/profile-picture.jpg') }}"  alt="image" width="50" height="50" />
                   @endif
                </div>
             </div>

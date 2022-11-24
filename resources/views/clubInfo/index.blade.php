@@ -35,9 +35,9 @@
                <td scope="row">{{ ($item->currentpage()-1) * 10 + $key + 1 }}</td>
                   <td>
                   @if($item->logo)
-                     <img src="{{ asset('Uploads/'.$item->logo) }}" width="50" height="50" />
+                     <img src="{{ asset('Uploads/'.$item->logo) }}" alt="image" width="50" height="50" />
                   @else
-                  <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                  <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                   @endif
 
                   </td>

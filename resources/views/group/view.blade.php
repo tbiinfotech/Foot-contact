@@ -23,9 +23,9 @@
                <div class="user_img">
                   <td>
                      @if($data->image)
-                     <img src="{{ asset('/Uploads/'.$data->image) }}" width="50" height="50" />
+                     <img src="{{ asset('/Uploads/'.$data->image) }}" alt="image" width="50" height="50" />
                      @else
-                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                      @endif
                   </td>
                   <label style="font-size:40px;">{{ $data->name }}</label>
@@ -68,9 +68,9 @@
                   @foreach($players as $player)
                   <li>
                      @if($player->image)
-                     <img src="{{ asset('Uploads/'.$player->image) }}" width="50" height="50" alt="one">
+                     <img src="{{ asset('Uploads/'.$player->image) }}" alt="image" width="50" height="50" alt="one">
                      @else
-                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                      @endif
                      {{$player->first_name}} {{$player->last_name}}
                   </li>
@@ -112,9 +112,9 @@
                   @foreach($coaches as $coach)
                   <li>
                      @if($coach->image)
-                     <img src="{{ asset('Uploads/'.$coach->image) }}" width="50" height="50" alt="one">
+                     <img src="{{ asset('Uploads/'.$coach->image) }}" alt="image" width="50" height="50" alt="one">
                      @else
-                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                      @endif
                      {{$coach->first_name}} {{$coach->last_name}}
                   </li>
@@ -127,9 +127,9 @@
                   @foreach($coaches as $coach)
                   <li>
                      @if($coach->image)
-                     <img src="{{ asset('Uploads/'.$coach->image) }}" width="50" height="50" alt="one">
+                     <img src="{{ asset('Uploads/'.$coach->image) }}"  alt="image" width="50" height="50" alt="one">
                      @else
-                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                     <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                      @endif
                      {{$coach->first_name}} {{$coach->last_name}}
                   </li>

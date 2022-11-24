@@ -18,11 +18,10 @@
          <div class="row">
             <div class="col-lg-6">
                <div class="user_img">
-                  <!-- <img src="{{ asset('theme/assets/images/user.png') }}" alt="user"> -->
                   @if($data->image)
-                  <img src="{{ asset('Uploads/'.$data->image) }}" width="50" height="50" />
+                  <img src="{{ asset('Uploads/'.$data->image) }}" alt="image" width="50" height="50" />
                   @else
-                  <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                  <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                   @endif
                   <label>{{ $data->name }} </label>
                </div>
@@ -82,9 +81,9 @@
                @foreach($group_player_list as $group_plyr)
                <li>
                   @if($group_plyr->image)
-                  <img src="{{ asset('Uploads/'.$group_plyr->image) }}" width="50" height="50" />
+                  <img src="{{ asset('Uploads/'.$group_plyr->image) }}" alt="image" width="50" height="50" />
                   @else
-                  <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                  <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                   @endif
                   {{$group_plyr->first_name}} {{$group_plyr->last_name}}
                </li>

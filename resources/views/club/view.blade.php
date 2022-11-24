@@ -11,7 +11,7 @@
                   <div class="row">
                      <div class="col-lg-6">
                         <div class="user_img">
-                        <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                        <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                            <label>Maethis Beaureguard <span>Coach</span></label>
                         </div>
                      </div>

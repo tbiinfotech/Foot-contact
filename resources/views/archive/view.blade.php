@@ -11,12 +11,12 @@
             <div class="col-lg-6">
                <div class="user_img">
                   @if($data->image)
-                  <img src="{{ asset('Uploads/'.$data->image) }}" width="50" height="50" />
+                  <img src="{{ asset('Uploads/'.$data->image) }}" alt="image" width="50" height="50" />
                   @else
-                  <img src="{{ asset('Uploads/profile-picture.jpg') }}" width="50" height="50" />
+                  <img src="{{ asset('Uploads/profile-picture.jpg') }}" alt="image" width="50" height="50" />
                   @endif
                   <label>{{ $data->first_name }} {{ $data->last_name }}<span>Player</span>
-                     <span><img src="{{ asset('theme/assets/images/Icon.svg') }}" alt=""> {{date('d M,Y', strtotime($data->date_of_birth)) }}</span></label>
+                     <span><img src="{{ asset('theme/assets/images/Icon.svg') }}" alt="image"> {{date('d M,Y', strtotime($data->date_of_birth)) }}</span></label>
                </div>
             </div>
             <div class="col-lg-6">
@@ -74,7 +74,6 @@
                   @foreach($parent as $parents)
                   <div class="col-md-3">
                      <div class="brand_logo">
-                        <!-- <img src="{{ asset('Uploads/'.$parents->logo) }}" alt="img" width="50" height="50"> -->
                         <h3> {{$parents->first_name}} {{$parents->last_name}} </h3>
                      </div>
                   </div>
