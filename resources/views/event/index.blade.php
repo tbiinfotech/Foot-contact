@@ -222,11 +222,11 @@ i#blue-calander-match {
                <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                      <!-- List -->
-                     <i class="fa fa-list match_icon_listing" id="grey-list-match"> <img src="{{ asset('theme/assets/images/list-grey.png') }}"></i>
-                     <i class="fa fa-list match_icon_listing" id="blue-list-match"> <img src="{{ asset('theme/assets/images/list-blue.png') }}"></i>
+                     <i class="fa fa-list match_icon_listing" id="grey-list-match"> <img src="{{ asset('theme/assets/images/list-grey.png') }}"  alt="one"></i>
+                     <i class="fa fa-list match_icon_listing" id="blue-list-match"> <img src="{{ asset('theme/assets/images/list-blue.png') }}" alt="one"></i>
                      <!-- Match -->
-                     <i class="fa fa-list match_icon_calendar" id="grey-calander-match"> <img src="{{ asset('theme/assets/images/calander-grey.png') }}"></i>
-                     <i class="fa fa-list match_icon_calendar" id="blue-calander-match"> <img src="{{ asset('theme/assets/images/calander-blue.png') }}"></i>
+                     <i class="fa fa-list match_icon_calendar" id="grey-calander-match"> <img src="{{ asset('theme/assets/images/calander-grey.png') }}" alt="one"></i>
+                     <i class="fa fa-list match_icon_calendar" id="blue-calander-match"> <img src="{{ asset('theme/assets/images/calander-blue.png') }}" alt="one"></i>
 
                      <h1 style="text-align: center" class="newheading" id="match">Match</h1>
 
@@ -238,11 +238,11 @@ i#blue-calander-match {
                   <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                      <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                         <!-- List -->
-                        <i class="fa fa-list training_icon_listing" id="grey-list-training"><img src="{{ asset('theme/assets/images/list-grey.png') }}"></i>
-                        <i class="fa fa-list training_icon_listing" id="blue-list-training"><img src="{{ asset('theme/assets/images/list-blue.png') }}"></i>
+                        <i class="fa fa-list training_icon_listing" id="grey-list-training"><img src="{{ asset('theme/assets/images/list-grey.png') }}" alt="one"></i>
+                        <i class="fa fa-list training_icon_listing" id="blue-list-training"><img src="{{ asset('theme/assets/images/list-blue.png') }}" alt="one"></i>
                         <!-- Match -->
-                        <i class="fa fa-list training_icon_calendar" id="grey-calander-training"><img src="{{ asset('theme/assets/images/calander-grey.png') }}"></i>
-                        <i class="fa fa-list training_icon_calendar" id="blue-calander-training"> <img src="{{ asset('theme/assets/images/calander-blue.png') }}"></i>
+                        <i class="fa fa-list training_icon_calendar" id="grey-calander-training"><img src="{{ asset('theme/assets/images/calander-grey.png') }}" alt="one"></i>
+                        <i class="fa fa-list training_icon_calendar" id="blue-calander-training"> <img src="{{ asset('theme/assets/images/calander-blue.png') }}" alt="one"></i>
                         <h1 style="text-align: center" class="newheading" id="traning">Training</h1>
                         <div id='training_calendar'></div>
                         <div id='training_listing'></div>
@@ -251,11 +251,11 @@ i#blue-calander-match {
                   <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                      <div class="tab-pane fade show active" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                         <!-- List -->
-                        <i class="fa fa-list event_icon_listing" id="grey-list-event"><img src="{{ asset('theme/assets/images/list-grey.png') }}"></i>
-                        <i class="fa fa-list event_icon_listing" id="blue-list-event"><img src="{{ asset('theme/assets/images/list-blue.png') }}"></i>
+                        <i class="fa fa-list event_icon_listing" id="grey-list-event"><img src="{{ asset('theme/assets/images/list-grey.png') }}" alt="one"></i>
+                        <i class="fa fa-list event_icon_listing" id="blue-list-event"><img src="{{ asset('theme/assets/images/list-blue.png') }}" alt="one"></i>
                         <!-- Match -->
-                        <i class="fa fa-list event_icon_calendar" id="grey-calander-event"><img src="{{ asset('theme/assets/images/calander-grey.png') }}"></i>
-                        <i class="fa fa-list event_icon_calendar" id="blue-calander-event"><img src="{{ asset('theme/assets/images/calander-blue.png') }}"></i>
+                        <i class="fa fa-list event_icon_calendar" id="grey-calander-event"><img src="{{ asset('theme/assets/images/calander-grey.png') }}" alt="one"></i>
+                        <i class="fa fa-list event_icon_calendar" id="blue-calander-event"><img src="{{ asset('theme/assets/images/calander-blue.png') }}" alt="one"></i>
 
                         <h1 style="text-align: center" class="newheading" id="event">Event</h1>
                         <div id='event_calendar'></div>
