@@ -428,7 +428,7 @@ class UserController extends Controller
             $last_name = $request->last_name;
             $email = $request->email;
             $date_of_birth =  date("Y-m-d", strtotime($request['date_of_birth']));
-
+ 
             if ($request->hasFile('image')) {
                 $file = $request->file('image')->getClientOriginalName();
                 $filename = time() . $file;

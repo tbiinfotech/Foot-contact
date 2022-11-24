@@ -15,10 +15,10 @@ class NotesController extends Controller
     public function create_notes(Request $request)
     { 
         try {
-            $request = json_decode(file_get_contents("php://input"), true);
-            $description = $request['description']; 
-            $event_id = $request['event_id'];
-            $type_id = $request['type_id'];
+            $data = json_decode(file_get_contents("php://input"), true);
+            $description = $data['description']; 
+            $event_id = $data['event_id'];
+            $type_id = $data['type_id'];
             $user_id =   Auth::user()->id;
             $data = Notes::create([
                 'description' => $description,
@@ -44,8 +44,8 @@ class NotesController extends Controller
     public function edit_notes(Request $request, $id)
     {
         try {
-            $request = json_decode(file_get_contents("php://input"), true);
-            $description = $request['description'];
+            $data = json_decode(file_get_contents("php://input"), true);
+            $description = $data['description'];
             $data = Notes::where(['id' => $id])->update([
                 'description' => $description
             ]);

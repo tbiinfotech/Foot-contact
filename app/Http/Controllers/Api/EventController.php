@@ -378,10 +378,10 @@ class EventController extends Controller
         try {
             $data = [];
             $user_id =   Auth::user()->id;
-            $request = json_decode(file_get_contents("php://input"), true);
+            $data = json_decode(file_get_contents("php://input"), true);
             $role_id = Auth::user()->role_id;
-            $page = $request['page'];
-            $date = str_replace("/", "-", $request['date']); //echo $date;
+            $page = $data['page'];
+            $date = str_replace("/", "-", $data['date']); //echo $date;
             $date = date("Y-m-d", strtotime($date)); //date("d", strtotime($date)) < 10 ? date("Y-m-d", strtotime($request['date'])) : date("Y-m-d", strtotime($date));
             $limit = 5;
             $eventModel = new Event();
@@ -530,11 +530,11 @@ class EventController extends Controller
         try {
             $data = [];
             $user_id =   Auth::user()->id;
-            $request = json_decode(file_get_contents("php://input"), true);
+            $data = json_decode(file_get_contents("php://input"), true);
             $role_id = Auth::user()->role_id;
-            $page = $request['page'];
-            $month = $request['month'];
-            $date = str_replace("/", "-", $request['date']);
+            $page = $data['page'];
+            $month = $data['month'];
+            $date = str_replace("/", "-", $data['date']);
             $date = date("Y-m-d", strtotime($date));
             $limit = 5;
             $offset = ($limit * $page) - $limit;

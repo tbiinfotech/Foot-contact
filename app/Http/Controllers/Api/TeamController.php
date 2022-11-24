@@ -129,9 +129,9 @@ class TeamController extends Controller
     public function joinTeam(Request $request)
     {
         try {
-            $request = json_decode(file_get_contents("php://input"), true);
-            $id = $request['id'];
-            $teamcode = $request['teamcode'];
+            $data = json_decode(file_get_contents("php://input"), true);
+            $id = $data['id'];
+            $teamcode = $data['teamcode'];
             $message = '';
             $auth_user =  auth()->user()->id;
             $team = Team::where(['id' => $id, 'teamcode' => $teamcode])->first();
